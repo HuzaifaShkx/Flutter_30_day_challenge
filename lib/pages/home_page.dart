@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widget/drawer.dart';
+
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -10,11 +12,11 @@ class HomePage extends StatelessWidget {
       
       appBar: AppBar(
         title: Text("Practice Flutter"),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.deepOrangeAccent,
         shadowColor: Colors.greenAccent,
       ),
       body: Center(child: Text("welcome to flutter $s in $a days")),
-      drawer: Drawer(),
+      drawer: Mydrawer(),
     );
   }
 }
