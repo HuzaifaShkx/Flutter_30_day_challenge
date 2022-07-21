@@ -40,14 +40,47 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child:(CatalogModel.items!=null && CatalogModel.items.isNotEmpty)? ListView.builder(
-          itemCount: CatalogModel.items.length,
-          itemBuilder: (context, index) {
-            return ItemWidget(
-              item: CatalogModel.items[index],
-            );
-          },
-        ):Center(child: CircularProgressIndicator(),), 
+        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+            ? GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    mainAxisSpacing: 16,
+                    crossAxisSpacing: 16,
+                    crossAxisCount: 2),
+                itemBuilder: (context, index) {
+                  final item = CatalogModel.items[index];
+                  return Card(
+                      clipBehavior: Clip.antiAlias,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15)),
+                      child: GridTile(
+                        child: Image.network(item.image),
+                        header: Container(
+                          child: Text(
+                            item.name,
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          padding: EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.deepOrange[400],
+                          ),
+                        ),
+                        footer: Container(
+                          child: Text(
+                            item.price.toString(),
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          padding: EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                        ),
+                      ));
+                },
+                itemCount: CatalogModel.items.length,
+              )
+            : Center(
+                child: CircularProgressIndicator(),
+              ),
       ),
       drawer: Mydrawer(),
     );
