@@ -5,7 +5,7 @@
       "name": "Techno Pro",
       "desc": "Techno Smart set",
       "color": "#2471A3",
-      "price": 30000,
+      "price": 300,
       "image": "https://images.unsplash.com/photo-1649515530664-7a3150983c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Techno Pro 2",
       "desc": "Techno Smart set",
       "color": "#BA4A00",
-      "price": 40000,
+      "price": 400,
       "image": "https://images.unsplash.com/photo-1575543419900-b3482ff8e69e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1vYmlsZSUyMHBob25lJTIwc2V0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Techno Pro X",
       "desc": "Techno Smart set",
       "color": "#F1C40F",
-      "price": 50000,
+      "price": 500,
       "image": "https://images.unsplash.com/photo-1649515530664-7a3150983c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Techno Pro X Max",
       "desc": "Techno Smart set",
       "color": "#5D6D7E",
-      "price": 60000,
+      "price": 600,
       "image": "https://images.unsplash.com/photo-1575543419900-b3482ff8e69e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1vYmlsZSUyMHBob25lJTIwc2V0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Techno Pro",
       "desc": "Techno Smart set",
       "color": "#2471A3",
-      "price": 30000,
+      "price": 300,
       "image": "https://images.unsplash.com/photo-1649515530664-7a3150983c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Techno Pro 2",
       "desc": "Techno Smart set",
       "color": "#BA4A00",
-      "price": 40000,
+      "price": 400,
       "image": "https://images.unsplash.com/photo-1575543419900-b3482ff8e69e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1vYmlsZSUyMHBob25lJTIwc2V0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Techno Pro X",
       "desc": "Techno Smart set",
       "color": "#F1C40F",
-      "price": 50000,
+      "price": 500,
       "image": "https://images.unsplash.com/photo-1649515530664-7a3150983c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Techno Pro X Max",
       "desc": "Techno Smart set",
       "color": "#5D6D7E",
-      "price": 60000,
+      "price": 600,
       "image": "https://images.unsplash.com/photo-1649515530664-7a3150983c7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
   ]
