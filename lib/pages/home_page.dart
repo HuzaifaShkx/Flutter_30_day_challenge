@@ -1,14 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 import '../models/catalog.dart';
 
 import 'package:velocity_x/velocity_x.dart';
+import '../utils/routes.dart';
 import '../widget/appbartheme.dart';
 import '../widget/home_widgets/catalogList.dart';
 import '../widget/home_widgets/catalog_header.dart';
-
-
 
 class HomePage extends StatefulWidget {
   @override
@@ -40,6 +40,11 @@ class _HomePageState extends State<HomePage> {
     String s = "Practice Flutter";
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+        child: Icon(CupertinoIcons.cart),
+        backgroundColor: MyTheme.darkbluishColor,
+      ),
       body: SafeArea(
         child: Container(
           padding: Vx.m32,
