@@ -13,10 +13,11 @@ class HomeDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -25,7 +26,7 @@ class HomeDetailPage extends StatelessWidget {
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(MyTheme.darkbluishColor),
+                    MaterialStateProperty.all(context.theme.buttonColor),
                 shape: MaterialStateProperty.all(StadiumBorder()),
               ),
               onPressed: () {},
@@ -50,12 +51,12 @@ class HomeDetailPage extends StatelessWidget {
                   edge: VxEdge.TOP,
                   child: Container(
                     width: context.screenWidth,
-                    color: Colors.white,
+                    color: context.cardColor,
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
                           catalog.name.text.xl4
-                              .color(MyTheme.darkbluishColor)
+                              .color(context.accentColor)
                               .bold
                               .make(),
                           catalog.desc.text.lg

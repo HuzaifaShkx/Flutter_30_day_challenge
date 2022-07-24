@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(Duration(seconds: 3));
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
     final decodedData = jsonDecode(catalogJson);
@@ -40,10 +40,11 @@ class _HomePageState extends State<HomePage> {
     String s = "Practice Flutter";
 
     return Scaffold(
+        backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
+        backgroundColor: context.theme.buttonColor,
         onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-        child: Icon(CupertinoIcons.cart),
-        backgroundColor: MyTheme.darkbluishColor,
+        child: Icon(CupertinoIcons.cart,color: Colors.white,),
       ),
       body: SafeArea(
         child: Container(
@@ -55,7 +56,6 @@ class _HomePageState extends State<HomePage> {
               CatalogList().py16().expand()
             else
               CircularProgressIndicator(
-                color: Colors.black,
                 strokeWidth: 12,
               ).centered().expand(),
           ]),
