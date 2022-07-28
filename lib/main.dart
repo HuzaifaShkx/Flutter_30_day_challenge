@@ -5,9 +5,14 @@ import 'package:tutorial_advance/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tutorial_advance/utils/routes.dart';
 import 'package:tutorial_advance/widget/appbartheme.dart';
+import 'package:velocity_x/velocity_x.dart';
+
+import 'core/store.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(VxState(
+    store: MyStore(),
+    child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

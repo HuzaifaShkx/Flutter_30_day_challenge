@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 import '../models/catalog.dart';
-
 import 'package:velocity_x/velocity_x.dart';
 import '../utils/routes.dart';
-import '../widget/appbartheme.dart';
 import '../widget/home_widgets/catalogList.dart';
 import '../widget/home_widgets/catalog_header.dart';
 
